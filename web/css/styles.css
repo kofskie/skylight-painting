@@ -662,6 +662,38 @@ img {
 
 /* Breakpoint for mobile */
 @media screen and (max-width: 900px) {
+    .gallery-anchor {
+        top: 800px;
+    }
+
+    .carousel {
+        top: 1000px;
+        padding: 10px;
+    }
+
+    .about-anchor {
+        top: 1850px;
+    }
+
+    .about {
+        top: 2050px;
+    }
+
+    .contact-anchor {
+        top: 3070px;
+    }
+
+    .contact-header {
+        color: #1c96d5;
+    }
+
+    .contact {
+        top: 3400px;
+    }
+
+    .separator {
+        top: 3100px;
+    }
 
     .carousel__cell {
         width: 100%;
@@ -723,12 +755,19 @@ img {
         width: 80vw;
     }
 
+    .hero__title-corner-pad-tr {
+        left: calc(85vw - 12px);
+    }
+
+    .hero__title-corner-pad-br {
+        left: calc(85vw - 12px);
+    }
+
     .hero__paint-roller {
         position: absolute;
         background: none;
-        /* TODO: make position absolute, fix JS graphics for mobile */
         transform: rotate(-30deg);
-        bottom: 360px;
+        bottom: 1000px;
     }
 
     .hero__tagline-container {
@@ -739,6 +778,10 @@ img {
 
     .hero__list-container {
         display: none;
+    }
+
+    .hero__title-corner-pad {
+        width: 12px;
     }
 
     .nav {
@@ -789,7 +832,7 @@ img {
         width: 50px;
         height: 50px;
         margin-right: 5px;
-        margin-top: -4px;
+        margin-top: 4px;
         z-index: 10;
         user-select: none;
         font-size: 45px;
@@ -883,6 +926,7 @@ img {
 }
 
 @media screen and (max-width: 600px) {
+
     .hero__tagline {
         font-size: 22px;
     }
@@ -942,6 +986,14 @@ img {
         margin-top: 16px;
     }
 
+    .hero__title-corner-pad-tr {
+        left: calc(95vw - 12px);
+    }
+
+    .hero__title-corner-pad-br {
+        left: calc(95vw - 12px);
+    }
+
     .description--general {
         font-size: 20px;
     }
@@ -970,6 +1022,8 @@ img {
     .flickity-button {
         top: 70% !important;
         margin: 5px !important;
+        width: 40px !important;
+        height: 40px !important;
     }
 
     .previous {
@@ -987,6 +1041,10 @@ img {
     .fa {
         display: block;
         font-size: 50px;
+    }
+
+    .location {
+        padding: 10px 0px;
     }
 }
 
@@ -1024,7 +1082,7 @@ img {
 
     .description--end {
         font-size: 18px;
-        margin: 2%;
+        margin: 1%;
         margin-bottom: 50px;
     }
 
@@ -1036,10 +1094,11 @@ img {
 
     .separator {
         left: -100px;
+        top: 3100px;
     }
 
     .contact-anchor {
-        top: 3390px;
+        top: 3090px;
     }
 }
 

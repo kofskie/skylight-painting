@@ -25,7 +25,7 @@ $(function () {
             // set if in mobile mode
             $('.hero__paint-roller').css({
                 'position': 'absolute',
-                'top': '1000px',
+                'top': '850px',
                 'right': '0'
             })
 
