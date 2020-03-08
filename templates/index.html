@@ -35,8 +35,13 @@
 
     <input type="checkbox" id="nav__mobile-checkbox" class="nav__mobile-checkbox">
     <div class="mobile-nav-bar">
-        <label for="nav__mobile-checkbox" class="nav__mobile-menu-button nav__mobile-menu-button--burger">&#9776;</label>
-        <label for="nav__mobile-checkbox" class="nav__mobile-menu-button nav__mobile-menu-button--close">X</label>
+        <label for="nav__mobile-checkbox" class="nav__mobile-menu-button nav__mobile-menu-button--burger">
+        <div class="burger-container" onclick="closeAnimation(this)">
+            <div class="burger-1"></div>
+            <div class="burger-2"></div>
+            <div class="burger-3"></div>
+        </div>
+        </label>
     </div>
     
 
@@ -302,6 +307,11 @@
             </style>
             </div>
     </div>
+    <script>
+        function closeAnimation(x) {
+        x.classList.toggle("close");
+    }
+    </script>
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="js/app.js"></script>
