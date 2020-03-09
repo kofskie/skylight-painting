@@ -17,13 +17,15 @@ $(function () {
         }
     });
 
+    var paintRoller = $('.hero__paint-roller');
+
     function checkRoller(scrollPos) {
         // console.log($('.hero__paint-roller').offset().top);
 
         if (window.matchMedia('(max-width: 900px)').matches) {
 
             // set if in mobile mode
-            $('.hero__paint-roller').css({
+            paintRoller.css({
                 'position': 'absolute',
                 'top': '850px',
                 'right': '0'
@@ -33,17 +35,17 @@ $(function () {
 
             if (scrollPos + $(window).height() > 1350) {
 
-                $('.hero__paint-roller').css({
+                paintRoller.css({
                     'position': 'absolute',
-                    'top': `${1350 - $('.hero__paint-roller').height()}px`,
+                    'top': `${1350 - paintRoller.height()}px`,
                     'right': '0'
                 })
 
             } else {
 
-                $('.hero__paint-roller').css({
+                paintRoller.css({
                     'position': 'fixed',
-                    'top': `${$(window).height() - $('.hero__paint-roller').height()}px`,
+                    'top': `${$(window).height() - paintRoller.height()}px`,
                     'right': '0'
                 })
             }
